@@ -29,6 +29,10 @@ type DomainMatcherProvider interface {
 	GetDomainMatcher() domain.Matcher[struct{}]
 }
 
+type GeositeMatcherProvider interface {
+	GetGeositeMatcher(code string) (domain.Matcher[struct{}], bool)
+}
+
 type IPMatcherProvider interface {
 	GetIPMatcher() netlist.Matcher
 }
