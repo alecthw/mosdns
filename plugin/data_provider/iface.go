@@ -33,6 +33,10 @@ type IPMatcherProvider interface {
 	GetIPMatcher() netlist.Matcher
 }
 
+type GeoIPMatcherProvider interface {
+	GetGeoIPMatcher(code string) (netlist.Matcher, bool)
+}
+
 type MmdbMatcherProvider interface {
 	GetMmdbMatcher() *geoip2.Reader
 }

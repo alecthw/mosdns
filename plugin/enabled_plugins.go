@@ -23,6 +23,7 @@ package plugin
 import (
 	// data provider
 	_ "github.com/IrineSistiana/mosdns/v5/plugin/data_provider/domain_set"
+	_ "github.com/IrineSistiana/mosdns/v5/plugin/data_provider/geoip"
 	_ "github.com/IrineSistiana/mosdns/v5/plugin/data_provider/ip_set"
 	_ "github.com/IrineSistiana/mosdns/v5/plugin/data_provider/mmdb"
 
@@ -39,6 +40,7 @@ import (
 	_ "github.com/IrineSistiana/mosdns/v5/plugin/matcher/random"
 	_ "github.com/IrineSistiana/mosdns/v5/plugin/matcher/rcode"
 	_ "github.com/IrineSistiana/mosdns/v5/plugin/matcher/resp_ip"
+	_ "github.com/IrineSistiana/mosdns/v5/plugin/matcher/resp_ip_geoip"
 	_ "github.com/IrineSistiana/mosdns/v5/plugin/matcher/resp_ip_mmdb"
 	_ "github.com/IrineSistiana/mosdns/v5/plugin/matcher/string_exp"
 
